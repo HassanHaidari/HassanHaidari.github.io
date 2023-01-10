@@ -1,0 +1,223 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: "Trirong", serif;
+	height: 700px;
+}
+
+#sideNav{
+    width: 140px;
+	height: 35vh;
+    position: fixed;
+	top: 0;
+    background: #E0E0E0;
+	z-index: 2;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#sideNav nav ul li{
+    list-style: none;
+    margin: 40px 25px;
+}
+
+#sideNav nav ul li a{
+    text-decoration: none;
+    color: brown;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #E0E0E0;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+img{
+	width: 40px;
+    margin-top: 5px;
+}
+
+.menu h1{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+}
+.text h2{
+    margin-top: 80px;
+    color: brown;
+    text-align: center;
+}
+.text p{
+	text-align: center;
+	font-size: 20px;
+}
+h4{
+	margin-left: 10px;
+}
+.text p{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.contact{
+    background-color: #E0E0E0;
+    width: 350px;
+    height: auto;
+	margin-left: 30px;
+	margin-top: 50px;
+    
+}
+.contact h3 ,label ,input, select{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.address, .oppening{
+	padding-top: 30px;
+	margin-left: 40px;
+	color: black;
+}
+.address ul li a{
+	text-decoration: none;
+}
+.address li, .oppening li {
+	list-style: none;
+}
+.copy{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+#toUp{
+	position: fixed;
+	right: 35px;
+	bottom: 45px;
+	width: 50px;
+	height: 50px;
+	background: white;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: brown;
+	border: none;
+}
+#toUp:hover{
+	color: rgba(79, 224, 200, 0.7);
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.text1{
+	text-align: center;
+	padding-top: 80px;
+	color: brown;
+}
+.text1 p{
+	font-size: 15px;
+	text-align: center;
+}
+.video{
+    width: 100%;
+    height: 420px;
+	margin-top: 50px;
+}
+.footer{
+	height: 200px;
+	margin-right: 15px;
+	margin-left: 15px;
+	text-align: center;
+	font-size: 18px;
+    font-family: "Trirong", serif;
+	margin-top: 70px;
+    color: brown;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+/*responsive for ipad mini*/
+@media only screen and (min-width: 768px){
+	#sideNav{
+		width: 180px;
+		height: 31vh;
+		font-size: 18px;
+	}
+	.address, .oppening{
+		padding-top: 20px;
+		margin-left: 20px;
+		color: black;
+		font-size: 18px;
+	}
+	.contact{
+		width: 450px;
+		margin-left: 18px;	
+		font-size: 18px;
+	}
+	#toUp{
+		bottom: 60px;
+	}
+	.text1 h3{
+		font-size: 30px;
+	}	
+	.text1 p{
+		font-size: 20px;
+	}
+	.video{
+		width: 100%;
+		height: 440px;
+		margin-top: 60px;
+	}
+	.footer{
+		font-size: 27px;
+	}
+}
+
+/*responsive for PC*/
+@media screen and (min-width: 1115px){
+	.video{
+		width: 70%;
+		margin-top: 40px;
+		text-align: center;
+		margin-left: 200px;
+	}
+	#toUp{
+		bottom: 50px;
+	}
+	#sideNav{
+		font-size: 14px;
+	}
+	.contact{
+		background-color: #E0E0E0;
+		width: 500px;
+		font-size: 15px;
+	}	
+}
+/*rotate  mobil display*/
+@media only screen and (min-width: 915px){
+	#sideNav{
+		width: 180px;
+		height: 75vh;
+	}
+	#toUp{
+		right: 25px;
+		bottom: 13px;
+	}
+
+}
+/*rotate  ipad mini display*/
+@media only screen and (min-width: 1024px){
+	#sideNav{
+		height: 40vh;
+	}
+}
+
+
+

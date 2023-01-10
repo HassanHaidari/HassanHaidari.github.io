@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="./script.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<title>Products</title>
+</head>
+<body>
+	<div>
+		<div id="sideNav">
+			<nav>
+			<ul>
+				<li> <a href="PamirStone.html">Home</a></li>
+				<li> <a href="Products.html">Products</a></li>			
+				<li> <a href="AboutUs.html">About us</a></li>
+				<li> <a href="Contact.html">Contact</a></li>
+			</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<img class="image" src="image/meny.png" id="menu" alt="picture">
+		</div>
+		<script>
+			var menuBtn = document.getElementById("menuBtn")
+			var menu = document.getElementById("menu")
+			var sideNav = document.getElementById("sideNav")
+			sideNav.style.right="-200px"
+			menuBtn.onclick=function(){
+				if(sideNav.style.right=="-200px"){
+					sideNav.style.right="0"
+					menu.src ="image/close.png";
+				}else{
+					sideNav.style.right="-200px"
+					menu.src ="image/meny.png";
+				}
+			}
+		</script>
+	</div>	
+	<div class="Text">
+		<h1>PamirStone</h1>
+		<h2>Here you can see some of out products!</h2><br>
+		<a href="AboutUs.html">Watch the video</a>
+	</div>
+	
+	<button onclick="topFunction()" id="toUp"> <i class="material-icons">arrow_upward</i></button>
+	
+	<div class="productList">
+		<div class="card">
+			<img src="image/9.jpg" alt="stone" style="width:100%">
+			<h1>Basin</h1>
+			<p class="price">$1500</p>
+			<p>The stone is a Granit</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+		<div class="card">
+			<img src="image/4.jpg" alt="stone" style="width:100%">
+			<h1>Outline Building</h1>
+			<p class="price">$1500 square meter</p>
+			<p>The stone is Marble</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+		<div class="card">
+			<img src="image/10.jpg" alt="stone" style="width:100%">
+			<h1>Kitchen Countertop</h1>
+			<p class="price">$1000 square meter</p>
+			<p >Two diffrent stone</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+		<div class="card">
+			<img src="image/8.jpg" alt="stone" style="width:100%">
+			<h1>Basin</h1>
+			<p class="price">$1500</p>
+			<p>The stone is Granit</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+		<div class="card">
+			<img src="image/6.jpg" alt="stone" style="width:100%">
+			<h1>Kitchen Countertop</h1>
+			<p class="price">$1000 square meter</p>
+			<p>Two diffrent stone</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+		<div class="card">
+			<img src="image/12.jpg" alt="stone" style="width:100%">
+			<h1>Barbecue</h1>
+			<p class="price">$1500 square meter</p>
+			<p>The stone is white Granit</p>
+			<p><a href="Contact.html">Contact now</a></p>
+		</div>
+	</div>
+</body>
+</html>

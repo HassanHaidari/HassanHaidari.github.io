@@ -1,0 +1,174 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "Trirong", serif;	
+}
+.Text{
+	text-align: center;
+	padding-top: 50px;
+	color: brown;	
+	font-size: 15px;
+}
+
+.Text a{
+	text-decoration: none;
+}
+.Text a:hover{
+	font-size: 15px;
+	background-color: #00ffff; 
+  	color: blue;
+}
+
+#sideNav{
+    width: 180px;
+	height: 35vh;
+    position: fixed;
+	top: 0;
+    background: #E0E0E0;
+	z-index: 2;
+    font-size: 18px;
+    transition: 0.5s;
+}
+#sideNav nav ul li{
+    list-style: none;
+    margin: 45px 20px;
+}
+#sideNav nav ul li a{
+    text-decoration: none;
+    color: brown;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #E0E0E0;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+img{
+	width: 45px;
+    margin-top: 3px;
+}
+
+#toUp{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	width: 40px;
+	height: 40px;
+	background: white;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: brown;
+	border: none;
+}
+#toUp:hover{
+	color: rgba(79, 224, 200, 0.7);
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.copy{
+	text-align: center;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.productList{
+	padding-top: 70px;
+	padding-left: 50px;
+	justify-content: space-evenly;
+}
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 75%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s;
+	background: #70c6e0;
+  }
+  .card:hover{
+	transform: translate(0px, -6px);
+  }
+  .card img{
+	width: 300px;
+	height: 330px;
+	text-align: center;
+	display: block;
+  }
+  .price {
+	color: rgb(170, 48, 48);
+	font-size: 22px;
+  }
+  .card p{
+	font-size: 20px;
+  }
+  .card a{
+	text-decoration: none;
+  }
+
+  @media only screen and (min-width: 768px){
+	.Text{
+		padding-top: 60px;
+		font-size: 20px;
+		}
+		#sideNav{
+			height: 30vh;
+		}
+	.card{
+		width: 45%;
+		margin: 15px;
+		box-sizing: border-box;
+		float: left;
+		margin-left: 3px;
+		text-align: center;
+	  }
+  }  
+
+  @media screen and (min-width:1115px){
+	.card{
+		width: 30%;
+	}
+	#toUp{
+		height: 45px;
+		width: 45px;
+	}
+	#sideNav{
+		height: 60vh;
+		font-size: 15px;
+	}	
+  }
+  /*rotate  mobil display*/
+@media only screen and (min-width: 915px){
+	#sideNav{
+		width: 180px;
+		height: 75vh;
+	}
+	#toUp{
+		right: 25px;
+		bottom: 13px;
+	}
+
+}
+/*rotate  ipad mini display*/
+@media only screen and (min-width: 1024px){
+	#sideNav{
+		height: 40vh;
+	}
+	.card{
+		margin-left: 15px;
+	}
+}
